@@ -27,7 +27,7 @@ export const HomeScreen = ({navigation}: HomeNavigationProps<'Home'>) => {
         style={styles.box}>
         <Text style={styles.text}>Rotation</Text>
       </TouchableOpacity>
-			<TouchableOpacity
+      <TouchableOpacity
         onPress={() => navigation.navigate('EventHandle')}
         style={styles.box}>
         <Text style={styles.text}>Event Handling</Text>
@@ -67,11 +67,16 @@ export const HomeScreen = ({navigation}: HomeNavigationProps<'Home'>) => {
         style={styles.box}>
         <Text style={styles.text}>Sticky Shape</Text>
       </TouchableOpacity>
-       <TouchableOpacity
+      <TouchableOpacity
         onPress={() => navigation.navigate('ShapeMorphing')}
         style={styles.box}>
         <Text style={styles.text}>Shape Morphing</Text>
-      </TouchableOpacity>  
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('DynamicSpring')}
+        style={styles.box}>
+        <Text style={styles.text}>Dynamic Spring</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };

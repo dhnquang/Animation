@@ -7,6 +7,7 @@ export interface HomeNavigationProps<RouteName extends keyof AppRoutes> {
 }
 
 export type AppRoutes = {
+  DynamicSpring: undefined;
   ShapeMorphing: undefined;
   StickyShapes: undefined;
   MaskedView: undefined;

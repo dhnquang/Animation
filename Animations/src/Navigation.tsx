@@ -15,6 +15,7 @@ import Fluid from "./Fluid";
 import MaskedView from "./MaskedView";
 import StickyShapes from "./StickyShapes";
 import PathMorphing from "./ShapeMorphing/ShapeMorphing";
+import DynamicSpring from "./DynamicSpring/DynamicSpring";
 
 const Stack = createStackNavigator<AppRoutes>();
 
@@ -34,6 +35,7 @@ const HomeNavigation = () => {
 			<Stack.Screen name={'MaskedView'} component={MaskedView}/>
 			<Stack.Screen name={'StickyShapes'} component={StickyShapes}/>
 			<Stack.Screen name={'ShapeMorphing'} component={PathMorphing}/>
+			<Stack.Screen name={'DynamicSpring'} component={DynamicSpring}/>
     </Stack.Navigator>
 	)
 }
