@@ -61,10 +61,10 @@ const DynamicSpring = () => {
       <Animated.View>
         <Image source={require('./assets/Photo.png')} style={styles.img} />
       </Animated.View>
-      <Animated.View {...{style2}}>
+      <Animated.View style={[styles.absolute, style2]}>
         <Image
           source={require('./assets/Photos.png')}
-          style={[styles.img, styles.absolute]}
+          style={styles.img}
         />
       </Animated.View>
       <PanGestureHandler {...{onGestureEvent}}>
@@ -90,6 +90,11 @@ const styles = StyleSheet.create({
   },
   absolute: {
     position: 'absolute',
+    top: 0,
+    left: 0,
+    width: 100,
+    height: 100,
+    borderRadius: 20,
   },
 });
 
